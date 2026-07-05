@@ -15,6 +15,6 @@ def PrintMap(map: list) -> None:
         count -= 1
     print("  a b c d e f g h")
 
-def GenerateMap(Row: int, Col: int) -> list:
-    map = [[0] * (Row) for i in range(Row)]
+def GenerateMap(Row: int, Col: int, shame: str='0') -> list:
+    map = [[shame] * (Row) for i in range(Row)]
     return map

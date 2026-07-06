@@ -1,17 +1,17 @@
-def KingMove():
+def KingMove(pos: str):
     pass
 
-def QueenMove():
+def QueenMove(pos: str):
     pass
 
-def BishopMove():
+def BishopMove(pos: str):
     pass
 
-def RookMove():
+def RookMove(pos: str):
     pass
 
-def PawnMove():
+def PawnMove(pos: str):
     pass
 
-def KnightMove():
+def KnightMove(pos: str):
     pass

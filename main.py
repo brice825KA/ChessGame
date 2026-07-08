@@ -7,10 +7,10 @@ from SrcGame.Generate_Map import PrintMap
 from SrcGame.LoopGame import LoopGame
 
 def main():
-    mapchess = GenerateMap(8, 8)
-    mapchess = FillMap(mapchess)
-    PrintMap(mapchess)
-    LoopGame(mapchess)
+    chess = GenerateMap(8, 8)
+    chess = FillMap(chess)
+    PrintMap(chess)
+    LoopGame(chess)
     sys.exit(0)
 
 if __name__ == "__main__":

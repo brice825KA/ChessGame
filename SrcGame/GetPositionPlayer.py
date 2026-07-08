@@ -22,6 +22,5 @@ def GetPosPlayer(coord: str, map: list) -> list:
     if formatstr == 0:
         print(f"Coord invalid: {coord}")
     else:
-        position[0] = int()
-        ValueAlpha(coord)
+        position[0]
     return map

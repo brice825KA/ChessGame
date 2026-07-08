@@ -5,7 +5,7 @@ def PrintCase(case: str):
 
 def ValueAlpha(char: str) -> int:
     dict = {"a": 0, "b": 1, "c": 2, "d": 3, "e": 4, "f": 5, "g": 6, "h": 7}
-    return dict[char]
+    return dict[char[0]]
 
 def PrintMap(map: list) -> None:
     count = 8

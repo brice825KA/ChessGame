@@ -4,5 +4,5 @@ Compilation: make
 Execution: ./ChessGame
 Vous verrer une Plaque d'echecs et en bas la barre de saisie
 Pour saisir la posirion vous avez la formule : f1 -> f2, position initiale -> position future
-exemple: e4 e5
+exemple: e4e5
 # ChessGame

@@ -1,5 +1,10 @@
-
 from Generate_Map import ValueAlpha
+
+def extract_coord(coord: str) -> list:
+    newcoord = []
+    coord.strip()
+    newcoord.append([x for x in coord if x != ' ' or x == '\t'])
+    return newcoord
 
 def FormatStr(coord: str) -> int | str:
     newcoord = []
@@ -16,11 +21,15 @@ def FormatStr(coord: str) -> int | str:
         return 0
     return str(formatcoord)
 
-def GetPosPlayer(coord: str, map: list) -> list:
+def GetPosPlayer(coord: str) -> list:
     formatstr = FormatStr(coord)
-    position = [0] * 2
+    position = [0] * 4
     if formatstr == 0:
         print(f"Coord invalid: {coord}")
     else:
-        position[0]
-    return map
+        coordextract = extract_coord(coord)
+        position[0] = ValueAlpha(coordextract[0])
+        position[2] = ValueAlpha(coordextract[2])
+        position[1] = int(coordextract[1])
+        position[3] = int(coordextract[3])
+    return position

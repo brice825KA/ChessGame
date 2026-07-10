@@ -14,7 +14,7 @@ def LoopGame(map: list):
                 print("Black win by forfeit")
                 break
             position = GetPosPlayer(position)
-            if position == [0, 0, 0, 0]:
+            if position == [0, 0, 0, 0] or map[position[3]][position[2]] != 0 or map[position[1]][position[0]] == 0:
                 print("Invalid position, try again")
                 count = tmp
                 continue
@@ -29,7 +29,7 @@ def LoopGame(map: list):
                 print("White win by forfeit")
                 break
             position = GetPosPlayer(position)
-            if position == [0, 0, 0, 0]:
+            if position == [0, 0, 0, 0] or map[position[3]][position[2]] != 0 or map[position[1]][position[0]] == 0:
                 print("Invalid position, try again")
                 count = tmp
                 continue

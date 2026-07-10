@@ -1,4 +1,4 @@
-from Generate_Map import ValueAlpha
+from SrcGame.Generate_Map import ValueAlpha
 
 def extract_coord(coord: str) -> list:
     newcoord = []
@@ -24,12 +24,15 @@ def FormatStr(coord: str) -> int | str:
 def GetPosPlayer(coord: str) -> list:
     formatstr = FormatStr(coord)
     position = [0] * 4
+    
     if formatstr == 0:
         print(f"Coord invalid: {coord}")
     else:
         coordextract = extract_coord(coord)
-        position[0] = ValueAlpha(coordextract[0])
-        position[2] = ValueAlpha(coordextract[2])
-        position[1] = int(coordextract[1])
-        position[3] = int(coordextract[3])
+        position[0] = ValueAlpha(coordextract[0][0])
+        position[2] = ValueAlpha(coordextract[0][2])
+        position[1] = int(coordextract[0][1])
+        position[3] = int(coordextract[0][3])
+    if position[2] or position[3] not in range(1, 8):
+        return [0, 0, 0, 0]
     return position

@@ -18,9 +18,9 @@ def LoopGame(map: list):
                 print("Invalid position, try again")
                 count = tmp
                 continue
-            current = map[position[0] + 2][position[1]]
-            map[position[0] + 2][position[1]] = 0
-            map[position[2]][position[3]] = current
+            current = map[position[1]][position[0]]
+            map[position[1]][position[0]] = 0
+            map[position[3]][position[2]] = current
             PrintMap(map)
         else:
             position = input("Enter position: ")
@@ -33,8 +33,9 @@ def LoopGame(map: list):
                 print("Invalid position, try again")
                 count = tmp
                 continue
-            current = map[position[0] + 2][position[1]]
-            map[position[0] + 2][position[1]] = '0'
-            map[position[2]][position[3]] = current
+            current = map[position[1]][position[0]]
+            map[position[1]][position[0]] = 0
+            map[position[3]][position[2]] = current
             PrintMap(map)
+        print(position)
         count += 1

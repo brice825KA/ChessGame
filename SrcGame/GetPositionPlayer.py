@@ -35,4 +35,4 @@ def GetPosPlayer(coord: str) -> list:
         position[3] = 8 - int(coordextract[0][3])
     if position[2] not in range(0, 8) or position[3] not in range(0, 8):
         return [0, 0, 0, 0]
-    return position
+    return position 

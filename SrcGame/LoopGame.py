@@ -1,4 +1,5 @@
 from SrcGame.GetPositionPlayer import GetPosPlayer
+from SrcGame.Generate_Map import PrintMap
 
 def LoopGame(map: list):
     position = []
@@ -13,10 +14,14 @@ def LoopGame(map: list):
                 print("Black win by forfeit")
                 break
             position = GetPosPlayer(position)
-            if position == [0,0, 0, 0]:
+            if position == [0, 0, 0, 0]:
                 print("Invalid position, try again")
                 count = tmp
                 continue
+            current = map[position[0] + 2][position[1]]
+            map[position[0] + 2][position[1]] = 0
+            map[position[2]][position[3]] = current
+            PrintMap(map)
         else:
             position = input("Enter position: ")
             print("Black player turn")
@@ -28,4 +33,8 @@ def LoopGame(map: list):
                 print("Invalid position, try again")
                 count = tmp
                 continue
+            current = map[position[0] + 2][position[1]]
+            map[position[0] + 2][position[1]] = '0'
+            map[position[2]][position[3]] = current
+            PrintMap(map)
         count += 1

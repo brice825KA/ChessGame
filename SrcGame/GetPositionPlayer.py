@@ -31,8 +31,8 @@ def GetPosPlayer(coord: str) -> list:
         coordextract = extract_coord(coord)
         position[0] = ValueAlpha(coordextract[0][0])
         position[2] = ValueAlpha(coordextract[0][2])
-        position[1] = int(coordextract[0][1])
-        position[3] = int(coordextract[0][3])
-    if position[2] or position[3] not in range(1, 8):
+        position[1] = 8 - int(coordextract[0][1])
+        position[3] = 8 - int(coordextract[0][3])
+    if position[2] not in range(0, 8) or position[3] not in range(0, 8):
         return [0, 0, 0, 0]
     return position

@@ -1,4 +1,4 @@
-def KingMove(pos: str):
+def KingMove(pos: str, cout: int):
     pass
 
 def QueenMove(pos: str):

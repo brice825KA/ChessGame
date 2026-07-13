@@ -5,4 +5,6 @@ Execution: ./ChessGame
 Vous verrer une Plaque d'echecs et en bas la barre de saisie
 Pour saisir la posirion vous avez la formule : f1 -> f2, position initiale -> position future
 exemple: e4e5
+Pour sortir du jeu. tapez 'exit' ou finissez la partie
 # ChessGame
+# Debug

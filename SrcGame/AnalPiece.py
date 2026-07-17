@@ -1,17 +1,16 @@
-def KingMove(pos: str, cout: int):
-    pass
 
-def QueenMove(pos: str):
-    pass
-
-def BishopMove(pos: str):
-    pass
-
-def RookMove(pos: str):
-    pass
-
-def PawnMove(pos: str):
-    pass
-
-def KnightMove(pos: str):
-    pass
+class Piece:
+    def __init__(self, pos: str):
+        self.pos = pos
+    def KingMove(self, pos: str, cout: int):
+        pass
+    def QueenMove(self, pos: str):
+        pass
+    def BishopMove(self, pos: str):
+        pass
+    def RookMove(self, pos: str):
+        pass
+    def PawnMove(self, pos: str):
+        pass
+    def KnightMove(self, pos: str):
+        pass

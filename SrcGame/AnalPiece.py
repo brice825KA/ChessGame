@@ -21,6 +21,9 @@ class Piece:
         decision = 0
         if self.pos[0] == self.pos[2] or self.pos[1] == self.pos[3]:
             decision = 1
+        # Parcourir en function des ligne:
+        if self.pos[0] == self.pos[2] and self.pos[1] != self.pos[3]:
+            decision = 1
         return decision
     def PawnMove(self, pos: str) -> int:
         return 0

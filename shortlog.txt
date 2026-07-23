@@ -1,0 +1,29 @@
+brice825KA (24):
+      Add src
+      main Build Chess Board
+      Nettoyage des fichiers pycache et ajout du gitignore
+      add chess.com file
+      Write on file .gitignore
+      main Filling map chess game
+      main Add file AnalPiece
+      main Write in file AnalPiece.py
+      main Nothing to do
+      main Create file SrcGame/LoopGame.py
+      main Create loop game
+      main Review of code
+      main Gerate alternace beetwen player and create loopgame
+      main finish move piece -> Analyse move piece
+      main Nothing to do
+      main Correct Move Piece
+      main Nothing to do
+      main Correct condition for move
+      main Nothing to do
+      main Complete README.md
+      main Add coditions of check same piece
+      main Create Class Piece
+      main Add Content on file AnalPiece.py
+      main Add code in AnalPiece.py in methode RookMove
+
+lelouche (1):
+      Initial commit
+

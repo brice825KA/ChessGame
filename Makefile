@@ -1,10 +1,3 @@
-#/
-## EPITECH PROJECT, 2025
-## ChessGame
-## File description:
-## Makefile
-#/
-
 src	=	$(wildcard SrcGame/*.py main.py)
 
 name  =		chessGame

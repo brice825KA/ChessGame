@@ -1,17 +1,26 @@
 #! /usr/bin/env python3
 
 import sys
-from SrcGame.Generate_Map import GenerateMap
-from SrcGame.FillingMap import FillMap
-from SrcGame.Generate_Map import PrintMap
-from SrcGame.LoopGame import LoopGame
+import pygame
+from SrcGame.constants import *
+
+pygame.init()
+clock = pygame.time.Clock()
+Win = pygame.display.set_mode((Width, Height))
 
 def main():
-    chess = GenerateMap(8, 8)
-    chess = FillMap(chess)
-    PrintMap(chess)
-    LoopGame(chess)
-    sys.exit(0)
+	FPS = 60
+	run = True
+	while run:
+		clock.tick(FPS)
+		Win.blit(white_bishop, (50,50))
+		pygame.display.update()
+		for event in pygame.event.get():
+			if event.type == pygame.QUIT:
+				run = False
+				quit()
+	sys.exit(0)
 
 if __name__ == "__main__":
     main()
+    
